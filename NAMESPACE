@@ -1,0 +1,13 @@
+export(MetaDE.rawdata,
+MetaDE.pvalue,
+MetaDE.ES,
+MetaDE.minMCC,
+MetaDE.Read,
+MetaDE.match,
+MetaDE.merge,
+MetaDE.filter,
+ind.cal.ES,
+ind.analysis,
+count.DEnumber,
+draw.DEnumber,
+heatmap.sig.genes)
