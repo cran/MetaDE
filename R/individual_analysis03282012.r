@@ -66,18 +66,17 @@ ind.analysis<-function(x,ind.method=c("f","regt","modt","pairedt","pearsonr","sp
   return(all.res)
 }
 
-  #--function to get the number of sample and lables in each study
+#--function to get the number of sample and lables in each study
 get.sample.label.number<-function(lbl,method){
-	if (method=="logrank"){
-  		N<-length(lbl) #nperstudy
-  		n<-NA
- 	 }else{
-  		N<-length(lbl) #nperstudy
-  		n<-c(sum(lbl),length(lbl)-sum(lbl)) #n per label per study
-  	 }
-	return(list(N=N,n=n))
-	}
-
+if (method=="logrank"){
+  N<-length(lbl) #nperstudy
+  n<-NA
+ 	}else{
+  N<-length(lbl) #nperstudy
+  n<-c(length(lbl)-sum(lbl),sum(lbl)) #n per label per study
+  }
+return(list(N=N,n=n))
+}
 get.sample.label.number2<-function(lbl){
   		N<-length(lbl) #nperstudy
   		n<-table(lbl) #n per label per study

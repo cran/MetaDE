@@ -593,9 +593,7 @@ count.DEnumber<-function(result,p.cut,q.cut){
         colnames(table.p)<-colnames(table.q)<-colnames(pm)
         return(list(pval.table=table.p,FDR.table=table.q))
 }
-#------------------------------------------------------------------------------------------------#
-# maxcut: maximum cut off can be given
-#
+
 draw.DEnumber<-function(result,maxcut,mlty=NULL,mcol=NULL,mlwd=NULL,mpch=NULL,FDR=TRUE){
 		if(class(result)=="MetaDE.pvalue"){
 			pm<-cbind(result$ind.p,result$meta.analysis$pval) 
@@ -630,7 +628,7 @@ draw.DEnumber<-function(result,maxcut,mlty=NULL,mcol=NULL,mlwd=NULL,mpch=NULL,FD
         s<-apply(pm,2,function(x,y) sum(x<=y,na.rm=T),y=cut)        
         return(sum(dist(cbind(cut,s))))
        }
-       mycut<-as.matrix(seq(0,maxcut,by=0.01))
+       mycut<-as.matrix(seq(0,maxcut,length=20))
        dis<-apply(mycut,1,get.c,pm=pm)
        minx.pos<-mycut[which.max(dis)]
    

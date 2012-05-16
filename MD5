@@ -1,9 +1,9 @@
-ce6526c475255e97b4b3b2be3948c837 *DESCRIPTION
+4fa95318e808c60e161aefc753eeb7ec *DESCRIPTION
 a54f7739919763a57b79c38ea9826bf0 *NAMESPACE
-c7e1dcdd13135fc838cea1716dc0569f *R/individual_analysis03282012.r
+13958425a9d097bdfd4406bcfaee1c3d *R/individual_analysis03282012.r
 1493cbb8fe1e6993e2cd58cea55472c5 *R/meta_analysis03282012.r
-6c3d14ec18c5e499272117ead7ee8e94 *R/utility03282012.r
-72ade829e88d7ad83e97255d0f972a3f *man/MetaDE-package.Rd
+c1819a89f4e8f81cfedcf62f7928d27b *R/utility03282012.r
+a5b36da97a85e975446d0d7a40731cca *man/MetaDE-package.Rd
 0b9d43bfacc0d042afaa91f872d63409 *man/MetaDE.ES.Rd
 d2d6b92a2eb86dcfe4702dd67d38a07a *man/MetaDE.Read.Rd
 5fd94c72305861570af990ece8ed707f *man/MetaDE.filter.Rd
